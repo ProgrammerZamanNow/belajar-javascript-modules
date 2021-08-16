@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Default and Named</title>
+</head>
+<body>
+<script type="module">
+    // import authorName, {content, title} from "./scripts/default-and-named.js";
+    import {default as authorName, content, title} from "./scripts/default-and-named.js";
+
+    console.info(title);
+    console.info(content);
+    console.info(authorName);
+</script>
+</body>
+</html>

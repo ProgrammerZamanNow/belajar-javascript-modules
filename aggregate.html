@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aggregate</title>
+</head>
+<body>
+<script type="module">
+
+    import {Person, sayGoodBye, sayHello, sum} from "./scripts/aggregate.js";
+
+    const person = new Person("Eko");
+    person.sayHello("Joko");
+
+    sayGoodBye("Eko");
+    sayHello("Eko");
+
+    console.info(sum(10, 10));
+
+</script>
+</body>
+</html>

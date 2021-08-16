@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Module Loading</title>
+</head>
+<body>
+<input type="text" id="name">
+<input type="button" value="Say" id="sayButton">
+<script type="module">
+
+    document.getElementById("sayButton").onclick = function (){
+        const name = document.getElementById("name").value;
+
+        import("./scripts/alert.js").then(function (module) {
+            module.alertHello(name);
+        })
+
+    }
+
+
+</script>
+</body>
+</html>

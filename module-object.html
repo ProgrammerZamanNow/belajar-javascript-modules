@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module Object</title>
+</head>
+<body>
+<script type="module">
+
+    import * as eko from "./scripts/module-object.js";
+
+    console.info(eko.firstName);
+    console.info(eko.middleName);
+    console.info(eko.lastName);
+
+    eko.hello();
+
+    const person = new eko.Person();
+
+</script>
+</body>
+</html>
